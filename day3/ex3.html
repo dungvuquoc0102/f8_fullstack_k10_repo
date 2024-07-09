@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Login</title>
+	<link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+	<form action="#" class="login-form">
+		<div class="form-group">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+		</div>
+		<div class="form-group">
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+		</div>
+		<div class="form-group">
+			<label for="city">City of Employment:</label>
+			<input type="text" id="city" name="city" required>
+		</div>
+		<div class="form-group">
+			<label for="webserver">Web server:</label>
+			<select name="webserver" id="webserver" required>
+				<option value="">— Choose a server —</option>
+				<option value="1">Nginx</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<div class="input-group-name">Please specify your role:</div>
+			<div>
+				<label><input type="radio" id="admin_role" name="role" required value="1">Admin</label>
+				<label><input type="radio" id="engineers_role" name="role" required value="2">Engineer</label>
+				<label><input type="radio" id="manager_role" name="role" required value="3">Manager</label>
+				<label><input type="radio" id="guest_role" name="role" required value="4">Guest</label>
+			</div>
+
+		</div>
+		<div class="form-group">
+			<div class="input-group-name">Single Sign-on to the following:</div>
+			<div>
+				<label><input type="checkbox" id="mail_signon" name="signon" value="1"> Mail</label>
+				<label><input type="checkbox" id="payroll_signon" name="signon" value="2">
+					Payroll</label>
+				<label><input type="checkbox" id="server_signon" name="signon" value="3">
+					Self-server</label>
+			</div>
+		</div>
+		<div class="form-btn">
+			<div>
+				<button type="submit">Login</button>
+				<button type="reset">Reset</button>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>

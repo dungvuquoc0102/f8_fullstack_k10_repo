@@ -1,0 +1,30 @@
+form {
+  width: 350px;
+}
+.form-group {
+  display: flex;
+  margin-bottom: 5px;
+}
+.form-group > input {
+  width: 70%;
+  height: 1rem;
+  margin: auto 0;
+}
+.form-group > div > label {
+  display: block;
+}
+.form-group > label,
+.input-group-name {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.form-group > .input-group-name + div {
+  margin: 5px 0;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
