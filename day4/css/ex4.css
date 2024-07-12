@@ -1,0 +1,36 @@
+body {
+	font-family: Arial, sans-serif;
+	color: #4c5b75;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+}
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+p code {
+	background-color: #e7ecfc;
+	padding: 2px 4px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+p a {
+	color: #5590de;
+	text-decoration: none;
+	border-bottom: 1px solid #5590de;
+}
+.box {
+	margin-top: 30px;
+	padding: 20px;
+	padding-top: 5px;
+	border: 1px solid #908ea4;
+	border-radius: 10px;
+}
+.box a {
+	color: #5590de;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px solid #5590de;
+}

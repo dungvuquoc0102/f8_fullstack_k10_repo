@@ -2,7 +2,8 @@ body {
 	font-family: Arial, sans-serif;
 }
 .form-subcribe {
-	width: 600px;
+	max-width: 600px;
+	margin: 0 auto;
 	padding: 5px 30px 20px;
 	background-color: #334455;
 	border-radius: 10px;

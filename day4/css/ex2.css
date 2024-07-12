@@ -1,7 +1,9 @@
 .container {
-	width: 500px;
+	max-width: 500px;
 	padding: 2rem 5rem;
 	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .container p {
 	font-style: italic;
