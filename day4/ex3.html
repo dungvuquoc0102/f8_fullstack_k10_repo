@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom List</title>
+    <link rel="stylesheet" href="css/ex3.css" />
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom List</title>
-  <link rel="stylesheet" href="css/ex3.css">
-  <style>
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+      ul {
+        list-style: none;
+        font-size: 2rem;
+      }
 
-    ul {
-      list-style: none;
-      font-size: 2rem;
-    }
-
-    li::before {
-      content: "";
-      background-image: url('img/ex3_blush_emoji.png');
-      background-size: 100%;
-      height: 1.2rem;
-      width: 1.2rem;
-      display: inline-block;
-      margin-right: 0.7rem;
-    }
-  </style>
-</head>
-<div class="container">
-  <ul>
-    <li>John</li>
-    <li>Michael</li>
-    <li>Simpson</li>
-    <li>Johnson</li>
-  </ul>
-</div>
-
-<body>
-
-</body>
-
+      li::before {
+        content: "";
+        background-image: url("img/ex3_blush_emoji.png");
+        background-size: 100%;
+        height: 1.2rem;
+        width: 1.2rem;
+        display: inline-block;
+        margin-right: 0.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li>John</li>
+        <li>Michael</li>
+        <li>Simpson</li>
+        <li>Johnson</li>
+      </ul>
+    </div>
+  </body>
 </html>
