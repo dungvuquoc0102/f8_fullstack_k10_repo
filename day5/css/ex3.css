@@ -1,0 +1,56 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+html {
+	font-family: Arial, sans-serif;
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.service-section {
+	text-align: center;
+	padding: 20px;
+}
+.service-section span {
+	font-size: 1.3rem;
+}
+.service-list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+.service-box {
+	margin: 15px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+}
+.service-box h3 {
+	font-size: 1.5em;
+}
+.service-box-icon i {
+	padding: 30px;
+	margin: 10px;
+	font-size: 4.5rem;
+	color: #f1a83a;
+	border-radius: 50%;
+	border: 1px solid #f1a83a;
+}
+.service-box p {
+	font-size: 1.3rem;
+	color: #b2b2b2;
+}
+.service-box-btn button {
+	font-size: 1.3rem;
+	background-color: #f1a83a;
+	color: #fff;
+	padding: 15px 30px;
+	margin: 20px 0 10px;
+	border: none;
+	cursor: pointer;
+}
