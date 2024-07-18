@@ -1,0 +1,147 @@
+@import url("style.css");
+body {
+	font-family: "Lato", sans-serif;
+}
+.form-heading {
+	font-family: "Lobster", sans-serif;
+	font-size: 4.8rem;
+	font-weight: 400;
+}
+.form-description {
+	color: #c1c0c0;
+}
+.form-description span {
+	color: #ea3f33;
+}
+.form-contact {
+	margin-top: 30px;
+}
+.form-contact .form-group {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	flex-direction: row-reverse;
+}
+.form-group label {
+	text-align: center;
+	padding: 2rem 0;
+	width: 7rem;
+	color: #fff;
+	background-color: #c1c0c0;
+	font-size: 2rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+	width: 100%;
+	padding: 20px;
+	border: 1px solid #c1c0c0;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+}
+.form-group span {
+	color: #c1c0c0;
+	position: absolute;
+	font-size: 1rem;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 20px;
+}
+.form-group span i {
+	display: inline-block;
+}
+.form-group select {
+	appearance: none;
+}
+.form-group select ~ span {
+	font-size: 2rem;
+}
+.form-group textarea {
+	height: 200px;
+	resize: none;
+	font-size: 1.6rem;
+	font-family: "Lato", sans-serif;
+}
+.form-group textarea ~ span {
+	top: 3rem;
+}
+.form-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.form-button label {
+	color: #c1c0c0;
+	position: relative;
+	padding-left: 40px;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+.form-button input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: -12px;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border: 3px solid #c1c0c0;
+	cursor: pointer;
+}
+.checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.form-button input:checked ~ .checkmark::after {
+	display: block;
+}
+.form-button .checkmark::after {
+	left: 8px;
+	top: 4px;
+	width: 7px;
+	height: 12px;
+	border: solid #000;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.form-button button {
+	padding: 10px 40px;
+	background-color: #ea3f33;
+	color: #fff;
+	font-size: 1.6rem;
+	border: none;
+	text-transform: uppercase;
+}
+.form-group:hover input,
+.form-group:hover select,
+.form-group:hover textarea {
+	border: 2px solid #000;
+	border-left: 0;
+}
+.form-group:hover label {
+	background-color: #000;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+	border: 2px solid #000;
+	border-left: 0;
+	outline: none;
+}
+.form-group input:focus ~ label,
+.form-group select:focus ~ label,
+.form-group textarea:focus ~ label {
+	background-color: #000;
+}
