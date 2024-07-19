@@ -185,6 +185,9 @@ body {
 .form-group:hover label {
 	background-color: #000;
 }
+.form-group:hover span.required-icon {
+	color: #a09b9b;
+}
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
