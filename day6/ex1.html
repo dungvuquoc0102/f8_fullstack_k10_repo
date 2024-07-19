@@ -5,63 +5,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/ex1.css">
 </head>
 
 <body>
   <div class="container">
+    <!-- Form section wrapper -->
     <div class="form-section">
+      <!-- Form heading -->
       <h2 class="form-heading">Hey there</h2>
+      <!-- Form description -->
       <p class="form-description"><span>We'd like to hear from you.</span> Send us your message or just say hi with our
-        contact form
-        or directly via phone, we love to chat.</p>
+        contact form or directly via phone, we love to chat.</p>
+      <!-- Contact form -->
       <form action="#" class="form-contact" method="post">
+        <!-- Form group for name input -->
         <div class="form-group">
+          <!-- Name input field -->
           <input class="form-contact-name" type="text" placeholder="Your name" id="name" name="name" required>
-          <span class="required-icon"><i class="fa-solid fa-star"></i></span>
+          <!-- Tooltip text for name input -->
+          <span class="tooltiptext">Enter your name</span>
+          <!-- Required icon for name input -->
+          <span class="input-icon required-icon"><i class="fa-solid fa-star"></i></span>
+          <!-- Delete icon for name input -->
+          <span class="input-icon delete-icon"><i class="fa-solid fa-xmark"></i></span>
+          <!-- Label with icon for name input -->
           <label for="name"><i class="fa-solid fa-user" aria-hidden="true"></i></label>
         </div>
+        <!-- Form group for email input -->
         <div class="form-group">
+          <!-- Email input field -->
           <input class="form-contact-email" type="email" placeholder="your@domain.com" id="email" name="email" required>
-          <span class="required-icon"><i class="fa-solid fa-star"></i></span>
+          <!-- Tooltip text for email input -->
+          <span class="tooltiptext">Enter your email</span>
+          <!-- Required icon for email input -->
+          <span class="input-icon required-icon"><i class="fa-solid fa-star"></i></span>
+          <!-- Delete icon for email input -->
+          <span class="input-icon delete-icon"><i class="fa-solid fa-xmark"></i></span>
+          <!-- Label with icon for email input -->
           <label for="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></label>
         </div>
+        <!-- Form group for phone input -->
         <div class="form-group">
+          <!-- Phone input field -->
           <input class="form-contact-phone" type="number" placeholder="+44 00 123" name="phone" required>
+          <!-- Tooltip text for phone input -->
+          <span class="tooltiptext">Enter your phone</span>
+          <!-- Label with icon for phone input -->
           <label for="phone"><i class="fa-solid fa-mobile-screen-button"></i></label>
         </div>
+        <!-- Form group for subject select -->
         <div class="form-group">
+          <!-- Subject dropdown -->
           <select class="form-contact-subject" name="subject">
             <option value="0">Subject</option>
             <option value="1">AI</option>
           </select>
-          <span class="required-icon"><i class="fa-solid fa-sort"></i></span>
+          <!-- Tooltip text for subject select -->
+          <span class="tooltiptext">Choose your select</span>
+          <!-- Required icon for subject select -->
+          <span class="input-icon required-icon"><i class="fa-solid fa-sort"></i></span>
+          <!-- Delete icon for subject select -->
+          <span class="input-icon delete-icon"><i class="fa-solid fa-xmark"></i></span>
+          <!-- Label with icon for subject select -->
           <label for="subject"><i class="fa-solid fa-book"></i></label>
         </div>
+        <!-- Form group for message textarea -->
         <div class="form-group">
+          <!-- Message textarea field -->
           <textarea class="form-contact-message" name="message" placeholder="Message"></textarea>
-          <span class="required-icon"><i class="fa-solid fa-star"></i></span>
+          <!-- Tooltip text for message textarea -->
+          <span class="tooltiptext">Enter your message</span>
+          <!-- Required icon for message textarea -->
+          <span class="input-icon required-icon"><i class="fa-solid fa-star"></i></span>
+          <!-- Delete icon for message textarea -->
+          <span class="input-icon delete-icon"><i class="fa-solid fa-xmark"></i></span>
+          <!-- Label with icon for message textarea -->
           <label for="message"><i class="fa-solid fa-message"></i></label>
         </div>
+        <!-- Form button section -->
         <div class="form-button">
-          <label><input type="checkbox" name="send_copy"><span class="checkmark"></span>Send me a copy of this
+          <!-- Checkbox for sending a copy of the message -->
+          <label><input type="checkbox" name="send_copy" checked><span class="checkmark"></span>Send me a copy of this
             message</label>
+          <!-- Send button -->
           <button>Send</button>
         </div>
       </form>
     </div>
+    <!-- End form section wrapper -->
   </div>
 </body>
 

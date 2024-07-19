@@ -5,11 +5,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horizontal Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/ex3.css">
 </head>
 
 <body>
-
+  <!-- Header section -->
+  <header>
+    <!-- Container for header content -->
+    <div class="container">
+      <!-- Wrapper for header elements -->
+      <div class="header-wrapper">
+        <!-- Logo section -->
+        <div class="logo">
+          <!-- Logo link -->
+          <a href="#"><img src="img/ex3_img.png" alt="Hi Study Logo" title="hi-study-logo"></a>
+        </div>
+        <!-- Category button section -->
+        <div class="category">
+          <!-- Category button link -->
+          <a href="#">
+            <button class="category-btn">
+              <!-- Icon for category button -->
+              <span class="category-btn-icon material-symbols-outlined">grid_view</span>
+              <!-- Text for category button -->
+              <span class="category-btn-content">Category</span>
+            </button>
+          </a>
+        </div>
+        <!-- Navigation links section -->
+        <nav class="nav-links">
+          <!-- Parent list for main navigation links -->
+          <ul class="parent">
+            <!-- Home link with dropdown -->
+            <li>
+              <a href="#"><span>Home</span><i class="fa-solid fa-chevron-down"></i></a>
+              <!-- Submenu for Home link -->
+              <ul class="sub">
+                <li><a href="#">Home Item</a></li>
+              </ul>
+            </li>
+            <!-- Courses link with dropdown -->
+            <li>
+              <a href="#">Courses <i class="fa-solid fa-chevron-down"></i></a>
+              <!-- Submenu for Courses link -->
+              <ul class="sub">
+                <li><a href="#">Courses Item</a></li>
+              </ul>
+            </li>
+            <!-- Dashboard link with dropdown -->
+            <li>
+              <a href="#">Dashboard <i class="fa-solid fa-chevron-down"></i></a>
+              <!-- Submenu for Dashboard link -->
+              <ul class="sub">
+                <li><a href="#">Dashboard Item</a></li>
+              </ul>
+            </li>
+            <!-- Pages link with dropdown -->
+            <li>
+              <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+              <!-- Submenu for Pages link -->
+              <ul class="sub">
+                <li><a href="#">Pages Item</a></li>
+              </ul>
+            </li>
+            <!-- Elements link with dropdown -->
+            <li>
+              <a href="#">Elements <i class="fa-solid fa-chevron-down"></i></a>
+              <!-- Submenu for Elements link -->
+              <ul class="sub">
+                <li><a href="#">Elements Item</a></li>
+              </ul>
+            </li>
+            <!-- Blog link with dropdown -->
+            <li>
+              <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+              <!-- Submenu for Blog link -->
+              <ul class="sub">
+                <li><a href="#">Blog Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- Join Now button link -->
+        <a href="#"><button class="join-btn">Join Now</button></a>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
