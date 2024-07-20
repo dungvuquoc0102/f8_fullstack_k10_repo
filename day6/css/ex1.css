@@ -168,11 +168,8 @@ body {
   font-style: normal;
 	cursor: pointer;
 }
-.form-group:hover input,
-.form-group:hover select,
-.form-group:hover textarea {
-	border: 2px solid #000;
-	border-left: 0;
+.form-group:hover {
+	outline: 2px solid #000;
 }
 .form-group:hover label {
 	background-color: #000;
