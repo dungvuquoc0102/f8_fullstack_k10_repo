@@ -18,7 +18,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-input, select, textarea, button {
+input, select, textarea, button, label {
 	font-family: inherit;
 	font-size: inherit;
   color: inherit;
