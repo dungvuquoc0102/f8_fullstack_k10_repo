@@ -1,0 +1,104 @@
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+.container {
+  max-width: 1200px;
+  overflow: visible;
+}
+ul.parent {
+  display: flex;
+  white-space:nowrap;
+}
+ul.parent > li.bar-item {
+  border: 1px solid #bebebe;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+ul.parent > li.bar-item {
+  border-right: none;
+}
+ul.parent > li.bar-item:last-child {
+  border-right: 1px solid #bebebe;
+}
+.flex-style {
+  flex: 1;
+}
+ul.parent > li.bar-item a {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  font-size: 1.6rem;
+  border: 5px solid #fff;
+}
+ul.parent > li.bar-item a span {
+  display: inline-block;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+ul.parent > li.bar-item > a:first-child > i.bar-item-icon {
+  padding: 3px 0;
+}
+ul.parent > li.bar-item > a > i.bar-item-arrow {
+  font-size: 1.3rem;
+}
+ul.parent > li.bar-item > .sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+ul.parent > li.bar-item ul.child {
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+ul.parent > li.bar-item >.sub-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  border: 6px solid #fff;
+  border-color: #fff transparent transparent #fff;
+  transform: rotate(45deg); 
+  top:  5px;
+  left: 15%;
+}
+ul.parent > li.bar-item ul.child > li {
+  border-bottom: 1px solid #bebebe;
+}
+ul.parent > li.bar-item ul.child > li:last-child {
+  border-bottom: none;
+}
+ul.parent > li.bar-item ul.child > li > a {
+  padding:20px 100px 20px 35px;
+  position: relative;
+}
+ul.parent > li.bar-item ul.child > li > a > i {
+  visibility: hidden;
+}
+ul.parent > li.bar-item ul.child > li > a > span::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 35px;
+}
+ul.parent > li.bar-item  a:hover,
+ul.parent > li.bar-item  a.active {
+  background-color: #2da5da;
+  color: #fff;
+}
+ul.parent > li.bar-item > a.parent:hover ~ .sub-menu,
+ul.parent > li.bar-item > a.parent.active ~ .sub-menu {
+  display: block;
+}
+ul.parent > li.bar-item > .sub-menu:hover {
+  display: block;
+}
