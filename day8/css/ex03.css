@@ -1,0 +1,109 @@
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+body {
+  font-family: "Asap", sans-serif;
+}
+.container {
+  max-width: 1500px;
+}
+.expl-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.expl-title h2 {
+  font-size: 2rem;
+  color: #3f3424;
+}
+.expl-title .stroke {
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+  margin-left: 15px;
+}
+.expl-province {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.expl-province-item {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 99px;
+  background: #ccc;
+  color: #3f3424;
+  cursor: pointer;
+}
+.province-item-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.province-item-desc  {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.expl-district {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.expl-district-item {
+  padding: 30px 40px;
+  border-radius: 7px;
+  background:#ccc;
+  color: #fff;
+  height: 300px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.expl-district-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+
+}
+.expl-district-item:nth-child(1) {
+  background: url("../img/ex3_img_quan2.jpg") no-repeat center / cover;
+}
+.expl-district-item:nth-child(2) {
+  background: url("../img/ex3_img_quan7.jpg") no-repeat center / cover;
+}
+.expl-district-item:nth-child(3) {
+  background: url("../img/ex3_img_quan9.jpg") no-repeat center / cover;
+}
+.expl-district-item:nth-child(4) {
+  background: url("../img/ex3_img_tanbinh.jpg") no-repeat center / cover;
+}
+.expl-district-item:nth-child(5) {
+  background: url("../img/ex3_img_thuduc.jpg") no-repeat center / cover;
+}
+.expl-district-item:nth-child(6) {
+  background: url("../img/ex3_img_binhchanh.jpg") no-repeat center / cover;
+}
+.district-item-title {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.district-item-desc {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  font-weight: 300;
+}
+.district-item-desc .big-number {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.expl-province-item:hover {
+  background: #AF7B38;
+  color:#fff;
+}
+

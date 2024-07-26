@@ -1,0 +1,57 @@
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@font-face {
+  font-family: "SFU";
+  src: url("../font/SFUTradeGothicBoldCondensedTwenty.TTF");
+}
+body {
+  font-family: "Asap", sans-serif;
+  color: #3f3424;
+}
+.container {
+  max-width: 1200px;
+}
+.banner {
+  width: 100%;
+  height: 400px;
+  background: url("../img/ex1_img.jpg") no-repeat center / cover #ccc;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.banner-content {
+  width: 40%;
+  margin-left:10%;
+  padding: 30px 20px 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px; 
+  position: relative;
+}
+.banner-content-title {
+  /* color: #bf4240; */
+  color: #DC5D55;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.banner-content-desc {
+  margin-bottom: 15px;
+}
+.banner-content-price {
+  color: #fff;
+  background: #DC5D55;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "SFU", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: absolute;
+  right: 30px;
+  top: 100%;
+  transform: translateY(-50%);
+}

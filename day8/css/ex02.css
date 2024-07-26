@@ -1,0 +1,79 @@
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@font-face {
+  font-family: "SFU";
+  src: url("../font/SFUTradeGothicBoldCondensedTwenty.TTF");
+}
+body {
+  font-family: "Asap", sans-serif;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1200px;
+}
+.profile-header {
+  width: 100%;
+  position: relative;
+}
+.profile-header-background {
+  width: 100%;
+  height: 300px;
+  background: url("../img/ex2_bg.jpg") no-repeat center / cover #ccc;
+  position: relative;
+}
+.profile-header-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.profile-header-nav {
+  display: flex;
+  justify-content: right;
+  padding-right: 60px;
+}
+.profile-header-nav h2 a {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 0 15px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid transparent;
+}
+.profile-header-info {
+  display: flex;
+  /* width: 500px; */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.info-avatar {
+  width: 200px;
+  height: 150px;
+  background: url("../img/ex2_avatar.jpg") no-repeat center / cover #ccc;
+  border-radius: 3px;
+}
+.info-content {
+  padding: 20px;
+  color: #fff;
+}
+.info-content-name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.info-content-desc {
+  display: flex;
+  gap: 30px;
+  font-weight: 300;
+}
+.info-content-desc .big_number {
+  font-family: "SFU", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+.profile-header-nav h2 a:hover {
+  color: #DC5D55;
+  border-bottom: 2px solid #DC5D55;
+}
