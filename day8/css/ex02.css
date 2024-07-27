@@ -34,6 +34,9 @@ body {
   justify-content: right;
   padding-right: 60px;
 }
+.profile-header-nav ul li {
+  display: inline-block;
+}
 .profile-header-nav h2 a {
   display: inline-block;
   padding: 15px 0;
@@ -74,6 +77,6 @@ body {
   font-weight: 300;
 }
 .profile-header-nav h2 a:hover {
-  color: #DC5D55;
-  border-bottom: 2px solid #DC5D55;
+  color: #dc5d55;
+  border-bottom: 2px solid #dc5d55;
 }

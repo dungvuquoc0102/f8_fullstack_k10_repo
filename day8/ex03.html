@@ -1,82 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ex03.css" />
+    <title>Real Estate Area</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/ex03.css">
-  <title>Real Estate Area</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="expl-section">
-      <div class="expl-title">
-        <h2>KHÁM PHÁ BẤT ĐỘNG SẢN CÁC KHU VỰC NỔI BẬT</h2>
-        <div class="stroke"></div>
-      </div>
-      <div class="expl-province">
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Hồ Chí Minh</h3>
-          <div class="province-item-desc">50.317 bất động sản</div>
+  <body>
+    <div class="container">
+      <div class="expl-section">
+        <div class="expl-title">
+          <h2>KHÁM PHÁ BẤT ĐỘNG SẢN CÁC KHU VỰC NỔI BẬT</h2>
+          <div class="stroke"></div>
         </div>
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Hà Nội</h3>
-          <div class="province-item-desc">18.767 bất động sản</div>
-        </div>
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Bình Dương</h3>
-          <div class="province-item-desc">7.051 bất động sản</div>
-        </div>
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Đồng Nai</h3>
-          <div class="province-item-desc">4.251 bất động sản</div>
-        </div>
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Bà Rịa Vũng Tàu</h3>
-          <div class="province-item-desc">3.968 bất động sản</div>
-        </div>
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Đà Nẵng</h3>
-          <div class="province-item-desc">3.680 bất động sản</div>
-        </div>
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Long An</h3>
-          <div class="province-item-desc">2.835 bất động sản</div>
-        </div>
-        <div class="expl-province-item">
-          <h3 class="province-item-title">Quảng Ninh</h3>
-          <div class="province-item-desc">2.490 bất động sản</div>
-        </div>
-      </div>
-      <div class="expl-district">
-        <div class="expl-district-item">
-          <h4 class="district-item-title">Quận 2</h4>
-          <div class="district-item-desc"><span class="big-number">4.186</span> bất động sản đang bán</div>
-        </div>
-        <div class="expl-district-item">
-          <h4 class="district-item-title">Quận 7</h4>
-          <div class="district-item-desc"><span class="big-number">4.664</span> bất động sản đang bán</div>
-        </div>
-        <div class="expl-district-item">
-          <h4 class="district-item-title">Quận 9</h4>
-          <div class="district-item-desc"><span class="big-number">3.702</span> bất động sản đang bán</div>
-        </div>
-        <div class="expl-district-item">
-          <h4 class="district-item-title">Quận Tân Bình</h4>
-          <div class="district-item-desc"><span class="big-number">3.062</span> bất động sản đang bán</div>
-        </div>
-        <div class="expl-district-item">
-          <h4 class="district-item-title">Thành phố Thủ Đức</h4>
-          <div class="district-item-desc"><span class="big-number">2.843</span> bất động sản đang bán</div>
-        </div>
-        <div class="expl-district-item">
-          <h4 class="district-item-title">Huyện Bình Chánh</h4>
-          <div class="district-item-desc"><span class="big-number">3.235</span> bất động sản đang bán</div>
+        <nav class="expl-province-nav">
+          <ul class="expl-province">
+            <li class="expl-province-item expl-province-item-checked">
+              <a href="#">
+                <h3 class="province-item-title">Hồ Chí Minh</h3>
+                <div class="province-item-desc">50.317 bất động sản</div>
+              </a>
+            </li>
+            <li class="expl-province-item">
+              <a href="#">
+                <h3 class="province-item-title">Hà Nội</h3>
+                <div class="province-item-desc">18.767 bất động sản</div>
+              </a>
+            </li>
+            <li class="expl-province-item">
+              <a href="#">
+                <h3 class="province-item-title">Bình Dương</h3>
+                <div class="province-item-desc">7.051 bất động sản</div>
+              </a>
+            </li>
+            <li class="expl-province-item">
+              <a href="#">
+                <h3 class="province-item-title">Đồng Nai</h3>
+                <div class="province-item-desc">4.251 bất động sản</div>
+              </a>
+            </li>
+            <li class="expl-province-item">
+              <a href="#">
+                <h3 class="province-item-title">Bà Rịa Vũng Tàu</h3>
+                <div class="province-item-desc">3.968 bất động sản</div>
+              </a>
+            </li>
+            <li class="expl-province-item">
+              <a href="#">
+                <h3 class="province-item-title">Đà Nẵng</h3>
+                <div class="province-item-desc">3.680 bất động sản</div>
+              </a>
+            </li>
+            <li class="expl-province-item">
+              <a href="#">
+                <h3 class="province-item-title">Long An</h3>
+                <div class="province-item-desc">2.835 bất động sản</div>
+              </a>
+            </li>
+            <li class="expl-province-item">
+              <a href="#">
+                <h3 class="province-item-title">Quảng Ninh</h3>
+                <div class="province-item-desc">2.490 bất động sản</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="expl-district">
+          <a href="#">
+            <div class="expl-district-item">
+              <h4 class="district-item-title">Quận 2</h4>
+              <div class="district-item-desc">
+                <span class="big-number">4.186</span> bất động sản đang bán
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="expl-district-item">
+              <h4 class="district-item-title">Quận 7</h4>
+              <div class="district-item-desc">
+                <span class="big-number">4.664</span> bất động sản đang bán
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="expl-district-item">
+              <h4 class="district-item-title">Quận 9</h4>
+              <div class="district-item-desc">
+                <span class="big-number">3.702</span> bất động sản đang bán
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="expl-district-item">
+              <h4 class="district-item-title">Quận Tân Bình</h4>
+              <div class="district-item-desc">
+                <span class="big-number">3.062</span> bất động sản đang bán
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="expl-district-item">
+              <h4 class="district-item-title">Thành phố Thủ Đức</h4>
+              <div class="district-item-desc">
+                <span class="big-number">2.843</span> bất động sản đang bán
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="expl-district-item">
+              <h4 class="district-item-title">Huyện Bình Chánh</h4>
+              <div class="district-item-desc">
+                <span class="big-number">3.235</span> bất động sản đang bán
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
