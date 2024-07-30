@@ -1,0 +1,163 @@
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  /* outline: 1px solid #ccc; */
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #66676C;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.law-item {
+  width: 370px;
+  padding: 15px;
+  margin: 25px 0;
+  border: 1px solid #ccc;
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+.law-item::before {
+  content: "";
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: #B68D7EB8;
+  transition: all 0.5s ease-in;
+}
+/* .law-item::after {
+  content: "";
+  display: block  ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #fff;
+  background: none;
+  transition: all 0.5s ease-in;
+} */
+.item-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #fff;
+  transition: all 0.5s ease-in;
+}
+.item-wrapper {
+  border: 1px solid transparent;
+  padding: 20px;
+  width: 100%;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-icon i {
+  font-size: 5rem;
+  color: #B68D7E;
+  margin: 20px 0;
+  transition: all 0.5s ease-in;
+}
+
+.item-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  color: #03041B;
+  width: 300px;
+  position: absolute;
+  top: 110px;
+  left: 20px;
+  transition: all 0.5s ease-in;
+}
+.item-description {
+  width: 300px;
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  transition: all 0.7s;
+  transition-timing-function: cubic-bezier(1, 0.7, 0.1, 0);
+}
+.item-learn-more {
+  width: 300px;
+  position: absolute;
+  top: 280px;
+  left: 20px;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
+}
+.item-learn-more a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.learn-more-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.learn-more-btn {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #A26F5A;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.law-item:hover::before {
+  display: block;
+}
+.law-item:hover .item-border {
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.law-item:hover:nth-child(1) {
+  background: url("../img/ex02_img_bg_landmark.jpg") no-repeat center / cover;
+}
+.law-item:hover:nth-child(2) {
+  background: url("../img/ex02_img_bg_briefcase.jpg") no-repeat center / cover;
+}
+.law-item:hover:nth-child(3) {
+  background: url("../img/ex02_img_bg_gavel.jpg") no-repeat center / cover;
+}
+.law-item:hover:nth-child(4) {
+  background: url("../img/ex02_img_bg_handshake.jpg") no-repeat center / cover;
+}
+.law-item:hover:nth-child(5) {
+  background: url("../img/ex02_img_bg_scale_balanced.jpg") no-repeat center / cover;
+}
+.law-item:hover:nth-child(6) {
+  background: url("../img/ex02_img_bg_handcuffs.jpg") no-repeat center / cover;
+}
+.law-item:hover .item-icon i {
+  transform: scale(0);
+}
+.law-item:hover .item-title {
+  top: 20px;  
+  color: #fff;
+}
+.law-item:hover .item-description {
+  top: 100px;
+  color: #fff;
+}
+.law-item:hover .item-learn-more {
+  visibility: visible;
+  top: 220px;
+}
+.learn-more-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
