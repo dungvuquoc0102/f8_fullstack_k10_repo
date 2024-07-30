@@ -19,7 +19,7 @@ body {
   margin: 25px 0;
   border: 1px solid #ccc;
   position: relative;
-  transition: all 0.5s ease-in;
+  /* transition: all 0.5s ease-in; */
 }
 .law-item::before {
   content: "";
@@ -110,7 +110,7 @@ body {
   align-items: center;
   border-radius: 50%;
   border: 1px solid #fff;
-  background-color: #A26F5A;
+  background-color: transparent;
   color: #fff;
   margin-left: 10px;
 }
