@@ -26,29 +26,32 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 .banner-content {
-  width: 40%;
-  margin-left:10%;
+  width: 48%;
+  margin-left: 10%;
   padding: 30px 20px 40px;
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px; 
+  border-radius: 5px;
   position: relative;
 }
 .banner-content-title {
-  /* color: #bf4240; */
-  color: #DC5D55;
+  color: #bf4240;
+  /* color: #DC5D55; */
   margin-bottom: 20px;
   font-weight: 600;
 }
 .banner-content-desc {
   margin-bottom: 15px;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 .banner-content-price {
   color: #fff;
-  background: #DC5D55;
+  background: #dc5d55;
   padding: 10px 20px;
   border-radius: 5px;
   font-family: "SFU", sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 100;
   text-transform: uppercase;
   position: absolute;
   right: 30px;
