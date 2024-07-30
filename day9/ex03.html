@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="css/ex03.css">
   <title>Message Form</title>
 </head>
@@ -41,11 +42,14 @@
             <label for="email">Email *</label>
           </div>
           <!-- Select box for department -->
-          <select id="department" name="department" required>
-            <option value="sales">Sales</option>
-            <option value="support">Support</option>
-            <option value="general">General Inquiry</option>
-          </select>
+          <div class="input-box">
+            <label for="department" class="arrow-icon"><i class="fa-solid fa-chevron-down"></i></label>
+            <select id="department" name="department" required>
+              <option value="sales">Sales</option>
+              <option value="support">Support</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
         </div>
         <!-- End input group -->
 

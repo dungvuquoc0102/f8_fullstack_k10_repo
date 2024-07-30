@@ -30,8 +30,7 @@ form {
   margin-bottom: 10px;
 }
 
-.input-group .input-box,
-.input-group select {
+.input-group .input-box {
   width: 48%;
 }
 
@@ -44,11 +43,11 @@ textarea {
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
-  color: #000;
 }
 select {
   padding: 20px;
   font-size: 1.6rem;
+  appearance: none;
 }
 .input-box {
   position: relative;
@@ -62,7 +61,13 @@ textarea + label{
   cursor: auto;
   transition: 0.3s;
 }
-
+.input-box .arrow-icon {
+  position: absolute;
+  index: 0;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 textarea {
   resize: vertical;
   height: 100px;
