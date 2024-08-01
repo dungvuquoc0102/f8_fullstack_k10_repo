@@ -1,0 +1,227 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid #ccc;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .line_main {
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  position: relative;
+  transition: rotate 1s ease;
+}
+.box .line_main .line_sub_1 {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  transition: rotate 1s ease;
+  transform-origin: 80px 20px;
+  rotate: 5deg;
+}
+.box .line_main .line_sub_2 {
+  width: 100px;
+  height: 40px;
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  transition: rotate 1s ease;
+  transform-origin: 80px 20px;
+  rotate: -5deg;
+}
+.box:hover .line_main .line_sub_1 {
+  rotate: 45deg;
+}
+.box:hover .line_main .line_sub_2 {
+  rotate: -45deg;
+}
+.box:hover .line_main {
+  rotate: 180deg;
+} */
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  outline: 1px solid #ccc;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.burger-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #31A8F6;
+  text-align: right;
+  position: relative;
+}
+.container {
+  max-width: 1000px;
+}
+.burger-menu-content {
+  padding-top: calc(50vh - 150px);
+  color: #fff;
+}
+.content-title {
+  margin-bottom: 50px;
+  font-size: 5rem
+}
+.content-desc {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.content-desc .small-text {
+  display: block;
+  margin-right: 10px;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+.content-desc .big-text {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 100;
+}
+.circle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  translate: -50% -50%;
+  transition: scale 0.4s ease;
+}
+.burger-icon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 33px;
+  height: 33px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: opacity 0s ease;
+  transition-delay: 0.1s;
+}
+.burger-icon-line {
+  width: 100%;
+  height: 5px;
+  background-color: #31A8F6;
+}
+.line-first,
+.line-second,
+.line-third {
+  transform-origin: 30% 50%;
+  transition: rotate 0.2s ease;
+  transition-delay: 0.1s;
+}
+.arrow-icon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow-icon-line {
+  width: 30px;
+  height: 5px;
+  background-color: #31A8F6;
+  position: relative;
+  transition: rotate 0.3s ease;
+  rotate: 0deg;
+}
+.arrow-icon-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 17.5px;
+  width: 15px;
+  height: 5px;
+  background-color: #31A8F6;
+  transform-origin: 12.5px 2.5px;
+  transition: rotate 0.3s ease;
+  rotate: 10deg;
+}
+.arrow-icon-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 17.5px;
+  width: 15px;
+  height: 5px;
+  background-color: #31A8F6;
+  transform-origin: 12.5px 2.5px;
+  transition: rotate 0.3s ease;
+  rotate: -10deg;
+}
+.menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+.menu ul li {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+.menu ul li a label {
+  display: block;
+  color: #31A8F6;
+  padding: 5px 60px;
+  cursor: pointer;
+  transition: 1s ease;
+  transition-property: color, background-color;
+}
+input[type="checkbox"]:checked ~ .circle-background {
+  scale: 100;
+}
+input[type="checkbox"]:checked ~ .burger-icon {
+  opacity: 0;
+  transition-delay: 0s;
+}
+input[type="checkbox"]:checked ~ .burger-icon .line-first {
+  rotate: 60deg;
+}
+input[type="checkbox"]:checked ~ .burger-icon .line-second {
+  rotate: 70deg;
+}
+input[type="checkbox"]:checked ~ .burger-icon .line-third {
+  rotate: 50deg;
+}
+input[type="checkbox"]:checked ~ .arrow-icon .arrow-icon-line {
+  rotate: 180deg;
+}
+input[type="checkbox"]:checked ~ .arrow-icon .arrow-icon-line::before {
+  rotate: 45deg;
+}
+input[type="checkbox"]:checked ~ .arrow-icon .arrow-icon-line::after {
+  rotate: -45deg;
+}
+input[type="checkbox"]:checked ~ .menu input[type="radio"]{
+  checked: false;
+}
+.menu ul input[type="radio"]:checked + li a label {
+  color: #000;
+  background-color: #EEEEEE;
+}
+
