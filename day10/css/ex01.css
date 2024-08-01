@@ -1,59 +1,5 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  outline: 1px solid #ccc;
-}
-.box {
-  width: 500px;
-  height: 500px;
-  margin: 50px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.box .line_main {
-  width: 200px;
-  height: 40px;
-  background-color: green;
-  position: relative;
-  transition: rotate 1s ease;
-}
-.box .line_main .line_sub_1 {
-  width: 100px;
-  height: 40px;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 120px;
-  transition: rotate 1s ease;
-  transform-origin: 80px 20px;
-  rotate: 5deg;
-}
-.box .line_main .line_sub_2 {
-  width: 100px;
-  height: 40px;
-  background-color: yellow;
-  position: absolute;
-  top: 0;
-  left: 120px;
-  transition: rotate 1s ease;
-  transform-origin: 80px 20px;
-  rotate: -5deg;
-}
-.box:hover .line_main .line_sub_1 {
-  rotate: 45deg;
-}
-.box:hover .line_main .line_sub_2 {
-  rotate: -45deg;
-}
-.box:hover .line_main {
-  rotate: 180deg;
-} */
 @import url("style.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-* {
-  outline: 1px solid #ccc;
-}
 body {
   font-family: "Inter", sans-serif;
 }
@@ -63,6 +9,7 @@ body {
   background-color: #31A8F6;
   text-align: right;
   position: relative;
+  overflow: hidden;
 }
 .container {
   max-width: 1000px;
@@ -95,11 +42,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 200px;
+  width: 16000px;
+  height: 16000px;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 500px rgba(0, 0, 0, 0.9);
   translate: -50% -50%;
   transition: scale 0.4s ease;
 }
@@ -108,7 +55,7 @@ body {
   top: 25px;
   left: 25px;
   width: 33px;
-  height: 33px;
+  height: 23px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -134,7 +81,7 @@ body {
   top: 25px;
   left: 25px;
   width: 33px;
-  height: 33px;
+  height: 23px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -192,35 +139,42 @@ body {
   transition: 1s ease;
   transition-property: color, background-color;
 }
-input[type="checkbox"]:checked ~ .circle-background {
-  scale: 100;
+input:not(#burger_item, #home_item, #about_item, #portfolio_item, #contact_item):checked ~ .circle-background {
+  scale: 0.0125;
 }
-input[type="checkbox"]:checked ~ .burger-icon {
+input:not(#burger_item, #home_item, #about_item, #portfolio_item, #contact_item):checked ~ .menu {
   opacity: 0;
-  transition-delay: 0s;
 }
-input[type="checkbox"]:checked ~ .burger-icon .line-first {
-  rotate: 60deg;
+input:not(#arrow_item):checked ~ .arrow-icon {
+  z-index: 2;
 }
-input[type="checkbox"]:checked ~ .burger-icon .line-second {
-  rotate: 70deg;
-}
-input[type="checkbox"]:checked ~ .burger-icon .line-third {
-  rotate: 50deg;
-}
-input[type="checkbox"]:checked ~ .arrow-icon .arrow-icon-line {
+input:not(#arrow_item):checked ~ .arrow-icon .arrow-icon-line {
   rotate: 180deg;
 }
-input[type="checkbox"]:checked ~ .arrow-icon .arrow-icon-line::before {
+input:not(#arrow_item):checked ~ .arrow-icon .arrow-icon-line::before {
   rotate: 45deg;
 }
-input[type="checkbox"]:checked ~ .arrow-icon .arrow-icon-line::after {
+input:not(#arrow_item):checked ~ .arrow-icon .arrow-icon-line::after {
   rotate: -45deg;
 }
-input[type="checkbox"]:checked ~ .menu input[type="radio"]{
-  checked: false;
+input:not(#arrow_item):checked ~ .burger-icon {
+  opacity: 0;
+  transition-delay: 0s;
+  z-index: 1;
 }
-.menu ul input[type="radio"]:checked + li a label {
+input:not(#arrow_item):checked ~ .burger-icon .line-first {
+  rotate: 60deg;
+}
+input:not(#arrow_item):checked ~ .burger-icon .line-second {
+  rotate: 70deg;
+}
+input:not(#arrow_item):checked ~ .burger-icon .line-third {
+  rotate: 50deg;
+}
+input#home_item:checked ~ .menu label[for="home_item"],
+input#about_item:checked ~ .menu label[for="about_item"],
+input#portfolio_item:checked ~ .menu label[for="portfolio_item"],
+input#contact_item:checked ~ .menu label[for="contact_item"] {
   color: #000;
   background-color: #EEEEEE;
 }

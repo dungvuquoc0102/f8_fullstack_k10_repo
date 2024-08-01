@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   outline: 1px solid #ccc;
@@ -51,4 +51,95 @@ input:checked + .box-slide-slide-sub {
   padding: 20px;
   cursor: pointer;
   background-color: green;
+} */
+@import url("style.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  /* outline: 1px solid #ccc; */
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #676767;
+  background-color: #cacaca;
+}
+.container {
+  max-width: 1200px;
+}
+.box-slide {
+  position: relative;
+  width: fit-content;
+  margin: 50px auto;
+}
+ul.box-slide-label {
+  background-color: #fff;
+  display: flex;
+}
+ul.box-slide-label li {
+  border: 1px solid #F4F4F4;
+  border-left: none;
+}
+.box-slide-label li:first-child {
+  border-left: 1px solid #F4F4F4;
+}
+.box-slide-label label{
+  display: block;
+  padding: 15px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+}
+.box-slide-label label::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+}
+.box-slide-label label span {
+  position: relative;
+}
+.box-slide-content {
+  perspective: 800px;
+}
+.slide-content-sub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  background-color: #fff;
+  transition: 1s ease;
+  transform-origin: 50% 0;
+  transform: rotateX(-50deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform-style: preserve-3d;
+  overflow: auto;
+}
+.slide-content-sub h2 {
+  font-size: 3rem;
+  width: calc(100% + 20px);
+}
+.slide-content-sub p {
+  line-height: 2;
+  padding-bottom: 20px;
+}
+input:nth-child(1):checked ~ ul li:nth-child(1) label::before,
+input:nth-child(2):checked ~ ul li:nth-child(2) label::before,
+input:nth-child(3):checked ~ ul li:nth-child(3) label::before,
+input:nth-child(4):checked ~ ul li:nth-child(4) label::before{
+  background-color: #4499D9;
+}
+input:nth-child(1):checked ~ ul li:nth-child(1) label,
+input:nth-child(2):checked ~ ul li:nth-child(2) label,
+input:nth-child(3):checked ~ ul li:nth-child(3) label,
+input:nth-child(4):checked ~ ul li:nth-child(4) label{
+  color: #fff;
+}
+ul li:hover label::before {
+  background-color: #4499D9;
+}
+input:nth-child(1):checked ~ .box-slide-content .slide-content-sub:nth-child(1),
+input:nth-child(2):checked ~ .box-slide-content .slide-content-sub:nth-child(2),
+input:nth-child(3):checked ~ .box-slide-content .slide-content-sub:nth-child(3),
+input:nth-child(4):checked ~ .box-slide-content .slide-content-sub:nth-child(4) {
+  transform: rotateX(0deg);
+  opacity: 1;
 }

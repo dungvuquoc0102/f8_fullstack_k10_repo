@@ -9,12 +9,6 @@
 </head>
 
 <body>
-  <!-- <div class="box">
-    <div class="line_main">
-      <div class="line_sub_1"></div>
-      <div class="line_sub_2"></div>
-    </div>
-  </div> -->
   <div class="burger-menu">
     <div class="container">
       <div class="burger-menu-content">
@@ -25,26 +19,26 @@
         </p>
       </div>
       <div class="burger-menu-upper">
-        <input type="radio" name="btn-toggle" id="btn-toggle">
-        <input type="radio" name="btn-toggle" id="btn-toggle">
+        <input type="radio" name="btn-toggle" id="burger_item" hidden>
+        <input type="radio" name="btn-toggle" id="arrow_item" checked hidden>
+        <input type="radio" name="btn-toggle" id="home_item" hidden>
+        <input type="radio" name="btn-toggle" id="about_item" hidden>
+        <input type="radio" name="btn-toggle" id="portfolio_item" hidden>
+        <input type="radio" name="btn-toggle" id="contact_item" hidden>
         <div class="circle-background"></div>
-        <label for="btn-toggle" class="arrow-icon">
+        <label for="arrow_item" class="arrow-icon">
           <div class="arrow-icon-line"></div>
         </label>
-        <label for="btn-toggle" class="burger-icon">
+        <label for="burger_item" class="burger-icon">
           <div class="burger-icon-line line-first"></div>
           <div class="burger-icon-line line-second"></div>
           <div class="burger-icon-line line-third"></div>
         </label>
         <nav class="menu">
           <ul>
-            <input type="radio" name="btn-toggle" id="home_item">
             <li><a href="#"><label for="home_item">home</label></a></li>
-            <input type="radio" name="btn-toggle" id="about_item">
             <li><a href="#"><label for="about_item">about</label></a></li>
-            <input type="radio" name="btn-toggle" id="portfolio_item">
             <li><a href="#"><label for="portfolio_item">portfolio</label></a></li>
-            <input type="radio" name="btn-toggle" id="contact_item">
             <li><a href="#"><label for="contact_item">contact</label></a></li>
           </ul>
         </nav>
