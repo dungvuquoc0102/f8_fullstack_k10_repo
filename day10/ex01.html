@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Metadata and linking external CSS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/ex01.css">
@@ -9,8 +10,10 @@
 </head>
 
 <body>
+  <!-- Main container for the burger menu -->
   <div class="burger-menu">
     <div class="container">
+      <!-- Content section of the burger menu -->
       <div class="burger-menu-content">
         <h1 class="content-title">#1 burger menu</h1>
         <p class="content-desc">
@@ -18,24 +21,31 @@
           <span class="big-text">google material design</span>
         </p>
       </div>
+      <!-- Upper section containing the interactive elements -->
       <div class="burger-menu-upper">
+        <!-- Radio buttons used to toggle between menu states, hidden from view -->
         <input type="radio" name="btn-toggle" id="burger_item" hidden>
         <input type="radio" name="btn-toggle" id="arrow_item" checked hidden>
         <input type="radio" name="btn-toggle" id="home_item" hidden>
         <input type="radio" name="btn-toggle" id="about_item" hidden>
         <input type="radio" name="btn-toggle" id="portfolio_item" hidden>
         <input type="radio" name="btn-toggle" id="contact_item" hidden>
+        <!-- Background circle for the menu icon -->
         <div class="circle-background"></div>
+        <!-- Arrow icon for toggling the menu (used when the menu is open) -->
         <label for="arrow_item" class="arrow-icon">
           <div class="arrow-icon-line"></div>
         </label>
+        <!-- Burger icon for toggling the menu (used when the menu is closed) -->
         <label for="burger_item" class="burger-icon">
           <div class="burger-icon-line line-first"></div>
           <div class="burger-icon-line line-second"></div>
           <div class="burger-icon-line line-third"></div>
         </label>
+        <!-- Navigation menu -->
         <nav class="menu">
           <ul>
+            <!-- Menu items with labels that correspond to the hidden radio buttons -->
             <li><a href="#"><label for="home_item">home</label></a></li>
             <li><a href="#"><label for="about_item">about</label></a></li>
             <li><a href="#"><label for="portfolio_item">portfolio</label></a></li>
@@ -44,6 +54,7 @@
         </nav>
       </div>
     </div>
+  </div>
 </body>
 
 </html>
