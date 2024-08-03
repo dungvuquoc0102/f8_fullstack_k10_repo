@@ -21,7 +21,7 @@ body {
   position: relative;
   overflow: hidden;
   top: 0;
-  transition: top 1.5s ease;
+  transition: top 1s ease;
   transition-delay: 0s;
 }
 .letter-component:hover .letter {
@@ -47,12 +47,12 @@ body {
   border-color: #CC4E42 transparent transparent transparent;
   transform-origin: 0 0;
   transform: rotateX(90deg);
-  transition: transform 1s ease;
+  transition: transform 0.5s ease;
   transition-delay: 0.3s;
 }
 .letter-component:hover .layout_first::before {
   transform: rotateX(180deg);
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 .layout_second {
   position: absolute;
@@ -61,13 +61,13 @@ body {
   width: 140px;
   height: 200px;
   background-color: #FFFFFF;
-  transition:top 1s ease;
+  transition:top 0.5s ease;
   transition-delay: 0s;
   overflow: hidden;
 }
 .letter-component:hover .layout_second {
   top: 30px;
-  transition-delay: 0.7s;
+  transition-delay: 0.3s;
 }
 .decor_first,
 .decor_second,
@@ -147,9 +147,9 @@ body {
   border: solid;
   border-width: 50px 100px 50px 100px;
   border-color: #CC4E42 transparent transparent transparent;
-  transition: transform 1s ease;
+  transition: transform 0.5s ease;
   transform-origin: 0 0;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 .letter-component:hover .layout_third {
   transform: rotateX(90deg);
@@ -178,10 +178,10 @@ body {
   opacity: 0.5;
   -webkit-filter: blur(13px);
   -webkit-transform: scale(1, 0.15);
-  transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 0.5s ease;
   box-shadow: 0 0 10px #000d;
 }
 .letter-component:hover .shadow{
   -webkit-transform: scale(1.7, 0.2);
-  transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 0.5s ease;
 }
