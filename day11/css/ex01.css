@@ -1,5 +1,5 @@
 @import url("style.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   outline: 1px solid #ccc;
 }
@@ -7,11 +7,14 @@ img {
   display: block;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   max-width: 1320px;
   padding: 0 12px;
+}
+.section-header {
+  padding: 40px 0;
 }
 .header-nav {
   display: flex;
@@ -37,16 +40,16 @@ body {
 }
 .nav-second-menu ul li a {
   padding: 8px 0;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.6rem;
 }
 .nav-second-menu ul li a:hover {
-  color: #F55253;
+  color: #f55253;
 }
 .nav-second-menu ul li a.active {
-  color: #F55253;
+  color: #f55253;
 }
 .nav-second-func {
   display: flex;
@@ -76,7 +79,7 @@ form.nav-second-func-search input::placeholder {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  color: #4D4D4D;
+  color: #4d4d4d;
   transition: 0.2s ease;
 }
 form.nav-second-func-search input:focus::placeholder {
@@ -101,7 +104,7 @@ form.nav-second-func-search input:focus::placeholder {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #F55253;
+  background: #f55253;
   color: #fff;
   box-shadow: -6px 9px 24px -6px rgba(238, 67, 67, 0.68);
   font-size: 1.4rem;
@@ -130,12 +133,13 @@ form.nav-second-func-search input:focus::placeholder {
 }
 .top-txt-bg {
   padding: 12px 16px;
-  background: #FDECEC;
+  background: #fdecec;
   display: flex;
   align-items: center;
-  color: #F55556;
+  color: #f55556;
   width: fit-content;
   border-radius: 99px;
+  margin-bottom: 20px;
 }
 .top-txt-bg h3 {
   font-size: 1.6rem;
@@ -149,14 +153,91 @@ form.nav-second-func-search input:focus::placeholder {
   font-size: 4rem;
   line-height: 5.4rem;
   font-weight: 700;
-  color: #2E2E2E;
-  letter-spacing: -0.74px;
-
+  color: #2e2e2e;
+}
+h1.content-first-title {
+  font-size: 7.4rem;
+  line-height: 8.8rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+h1.content-first-title span {
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  color: #f54748;
+}
+.content-first-para {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0.005em;
+  color: #676767;
+  max-width: 80%;
+  margin: 22px 0;
+}
+.content-first-func {
+  display: flex;
+  align-items: center;
+}
+.primary-btn {
+  display: block;
+  background: #f86061;
+  border-radius: 12px;
+  width: 186px;
+  padding: 25px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #fffafa;
+  border: 1px solid #f86061;
+}
+.primary-btn:hover {
+  background: #fffafa;
+  color: #f86061;
+}
+.first-func-order-now {
+  margin-right: 24px;
+}
+.first-func-order-process a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 224px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+.first-func-order-process span {
+  border-radius: 50%;
+  box-shadow: 0px 20px 49px -10px rgba(0, 0, 0, 0.08);
 }
 .col-content-second {
   width: 50%;
   padding: 0 12px;
 }
-.col-content-second img {
+.col-content-second > img {
   width: 100%;
+}
+.section-service {
+  padding: 100px 0;
+  background-color: #fef5f5;
+}
+.section-service-row .col-content-first {
+  text-align: center;
+  margin: 0 auto;
+}
+.section-service-row .col-content-first .content-first-top-txt {
+  color: #f55556;
+}
+.section-service-row .col-content-second {
+  width: 80%;
+  margin: 60px auto 20px;
+  display: flex;
+}
+.content-second-box {
+  padding: 50px 28px;
+  text-align: center;
+}
+.content-second-box img {
+  margin: 0 auto;
 }
