@@ -1,155 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/ex01.css" />
-    <title>10940_grover_grocery_food_delivery_website</title>
-  </head>
 
-  <body>
-    <header class="section-header">
-      <div class="container">
-        <div class="header-nav">
-          <div class="header-nav-first">
-            <div class="nav-first-logo">
-              <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/ex01.css" />
+  <title>10940_grover_grocery_food_delivery_website</title>
+</head>
+
+<body>
+  <header class="section-header">
+    <div class="container">
+      <div class="header-nav">
+        <div class="header-nav-first">
+          <div class="nav-first-logo">
+            <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+          </div>
+        </div>
+        <div class="header-nav-second">
+          <nav class="nav-second-menu">
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </nav>
+          <div class="nav-second-func">
+            <form class="nav-second-func-search">
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path fill="#8B8B8B"
+                    d="M15.212 14.573l-3.808-3.96A6.44 6.44 0 0012.92 6.46 6.467 6.467 0 006.46 0 6.467 6.467 0 000 6.46a6.467 6.467 0 006.46 6.46 6.39 6.39 0 003.701-1.169l3.837 3.99a.838.838 0 001.191.023.844.844 0 00.023-1.19zM6.46 1.685a4.78 4.78 0 014.775 4.775 4.78 4.78 0 01-4.775 4.775A4.78 4.78 0 011.685 6.46 4.78 4.78 0 016.46 1.685z">
+                  </path>
+                </svg>
+              </button>
+              <input type="text" placeholder="Search" />
+            </form>
+            <div class="nav-second-func-cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path fill="#3C3737" fill-rule="evenodd"
+                  d="M1.014 10.084a.464.464 0 01.45-.576h21.072c.302 0 .523.283.45.576L20.059 21.79a.927.927 0 01-.9.703H4.84a.927.927 0 01-.9-.703L1.015 10.084zm11.736 3.541a.75.75 0 00-1.5 0v4.75a.75.75 0 001.5 0v-4.75zm4.319-.561a.75.75 0 01.448.961l-1.624 4.464a.75.75 0 11-1.41-.513l1.625-4.464a.75.75 0 01.96-.448zm-9.177.448a.75.75 0 10-1.41.513l1.625 4.464a.75.75 0 101.41-.513l-1.625-4.464z"
+                  clip-rule="evenodd"></path>
+                <path stroke="#3C3737" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M18.5 10.5l-4.911-6.422a2 2 0 00-3.178 0L5.5 10.5"></path>
+              </svg>
             </div>
           </div>
-          <div class="header-nav-second">
-            <nav class="nav-second-menu">
-              <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Shop</a></li>
-              </ul>
-            </nav>
-            <div class="nav-second-func">
-              <form class="nav-second-func-search">
-                <button>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="none"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill="#8B8B8B"
-                      d="M15.212 14.573l-3.808-3.96A6.44 6.44 0 0012.92 6.46 6.467 6.467 0 006.46 0 6.467 6.467 0 000 6.46a6.467 6.467 0 006.46 6.46 6.39 6.39 0 003.701-1.169l3.837 3.99a.838.838 0 001.191.023.844.844 0 00.023-1.19zM6.46 1.685a4.78 4.78 0 014.775 4.775 4.78 4.78 0 01-4.775 4.775A4.78 4.78 0 011.685 6.46 4.78 4.78 0 016.46 1.685z"
-                    ></path>
-                  </svg>
-                </button>
-                <input type="text" placeholder="Search" />
-              </form>
-              <div class="nav-second-func-cart">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="#3C3737"
-                    fill-rule="evenodd"
-                    d="M1.014 10.084a.464.464 0 01.45-.576h21.072c.302 0 .523.283.45.576L20.059 21.79a.927.927 0 01-.9.703H4.84a.927.927 0 01-.9-.703L1.015 10.084zm11.736 3.541a.75.75 0 00-1.5 0v4.75a.75.75 0 001.5 0v-4.75zm4.319-.561a.75.75 0 01.448.961l-1.624 4.464a.75.75 0 11-1.41-.513l1.625-4.464a.75.75 0 01.96-.448zm-9.177.448a.75.75 0 10-1.41.513l1.625 4.464a.75.75 0 101.41-.513l-1.625-4.464z"
-                    clip-rule="evenodd"
-                  ></path>
-                  <path
-                    stroke="#3C3737"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M18.5 10.5l-4.911-6.422a2 2 0 00-3.178 0L5.5 10.5"
-                  ></path>
-                </svg>
+        </div>
+      </div>
+      <div class="header-content col-content">
+        <div class="col-content-first">
+          <div class="content-first-top-txt top-txt-bg">
+            <h3>More Than Faster</h3>
+            <span><img src="img/strawberry.svg" alt="strawberry" /></span>
+          </div>
+          <h1 class="content-first-title">
+            Groceries delivered in as little as
+            <span>2 hours</span>
+          </h1>
+          <p class="content-first-para">
+            Grocen atssures fresh grocery every morning to your family without
+            getting out in this pandemic.
+          </p>
+          <div class="content-first-func">
+            <div class="first-func-order-now">
+              <a class="primary-btn" href="#">Order Now</a>
+            </div>
+            <div class="first-func-order-process">
+              <a href="#">
+                <span><img src="img/button-play.svg" alt="button-play" /></span>
+                Order Process
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-content-second">
+          <img src="img/header-img.png" alt="header-img" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section-service">
+    <div class="section-service-wrapper">
+      <div class="container">
+        <div class="section-service-row">
+          <div class="col-content-first">
+            <h5 class="content-first-top-txt">What we Serve</h5>
+            <h2 class="content-first-title">
+              Fruit And Vegetable Delivered To Your Home
+            </h2>
+          </div>
+          <div class="col-content-second">
+            <div class="content-second-box">
+              <div class="box-bg"></div>
+              <div class="box-content">
+                <img src="img/service-ic1.svg" alt="service-ic-first" />
+                <h3 class="">Free shipping</h3>
+                <p class="">
+                  Enjoy Order in a hand using the fresness of groceries
+                </p>
+              </div>
+            </div>
+            <div class="content-second-box">
+              <div class="box-bg"></div>
+              <div class="box-content">
+                <img src="img/service-ic2.svg" alt="service-ic-second" />
+                <h3 class="">15 days returns</h3>
+                <p class="">
+                  Order in a handy way using the freshness of the groceries.
+                </p>
+              </div>
+            </div>
+            <div class="content-second-box">
+              <div class="box-bg"></div>
+              <div class="box-content">
+                <img src="img/service-ic3.svg" alt="service-ic-third" />
+                <h3 class="">Secure checkout</h3>
+                <p class="">
+                  If you get rotten items - return immediately to us.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="header-content">
+      </div>
+    </div>
+  </section>
+  <section class="section-explorer">
+    <div class="section-explorer-wrapper">
+      <div class="container">
+        <div class="col-content section-explorer-row">
           <div class="col-content-first">
-            <div class="content-first-top-txt top-txt-bg">
-              <h3>More Than Faster</h3>
-              <span><img src="img/strawberry.svg" alt="" /></span>
-            </div>
-            <h1 class="content-first-title">
-              Groceries delivered in as little as
-              <span>2 hours</span>
-            </h1>
-            <p class="content-first-para">
-              Grocen atssures fresh grocery every morning to your family without
-              getting out in this pandemic.
-            </p>
+            <h5 class="content-first-top-txt">WHY CHOOSE US</h5>
+            <h2 class="content-first-title">Find Favorites And Discover New Ones</h2>
+            <p class="content-first-para">At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesen
+              voluptatum deleniti.</p>
             <div class="content-first-func">
-              <div class="first-func-order-now">
-                <a class="primary-btn" href="#">Order Now</a>
+              <div class="first-func-explore-now">
+                <a class="primary-btn" href="#">Explore Now</a>
               </div>
-              <div class="first-func-order-process">
-                <a href="#">
-                  <span><img src="img/button-play.svg" alt="" /></span>
-                  Order Process
+            </div>
+          </div>
+          <div class="col-content-second">
+            <img src="img/feat.png" alt="feat">
+          </div>
+        </div>
+  </section>
+  <section class="section-order">
+    <div class="section-order-wrapper">
+      <div class="container">
+        <div class="col-content section-order-row">
+          <div class="col-content-first">
+            <h5 class="content-first-top-txt">HOME DELIVERY</h5>
+            <h2 class="content-first-title">Sit At Home We Will Take Care Your Order</h2>
+            <p class="content-first-para">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum deleniti atque corrupti quos</p>
+            <div class="content-first-func">
+              <div class="first-func-explore-now">
+                <a class="primary-btn" href="#">Explore Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-content-second">
+            <img src="img/feat2.png" alt="feat-second">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-download">
+    <div class="section-download-wrapper">
+      <div class="container">
+        <div class="col-content section-download-row">
+          <div class="col-content-first">
+            <h5 class="content-first-top-txt">Download our app</h5>
+            <h2 class="content-first-title">Get The Groceries App Order More Easily.</h2>
+            <p class="content-first-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut.</p>
+            <div class="content-first-func">
+              <div class="first-func-download-app">
+                <a class="basic-btn" href="#">
+                  <span><img src="img/apple.svg" alt="apple"></span>
+                  App Store
+                </a>
+              </div>
+              <div class="first-func-download-play">
+                <a class="basic-btn" href="#">
+                  <span><img src="img/playstore.svg" alt="playstore"></span>
+                  Play Store
                 </a>
               </div>
             </div>
           </div>
           <div class="col-content-second">
-            <img src="img/header-img.png" alt="" />
+            <img src="img/mobile.svg" alt="mobile">
           </div>
         </div>
       </div>
-    </header>
-    <section class="section-service">
-      <div class="section-service-wrapper">
-        <div class="container">
-          <div class="section-service-row">
-            <div class="col-content-first">
-              <h5 class="content-first-top-txt">What we Serve</h5>
-              <h2 class="content-first-title">
-                Fruit And Vegetable Delivered To Your Home
-              </h2>
+    </div>
+  </section>
+  <footer class="section-footer">
+    <div class="section-footer-wrapper">
+      <div class="container">
+        <div class="section-footer-row">
+          <div class="footer-first">
+            <div class="footer-first-logo">
+              <a href=""><img src="img/logo.svg" alt="logo-footer"></a>
+              <p>Fast delivery, which is active all over the world, serves with many transportation vehicles.</p>
             </div>
-            <div class="col-content-second">
-              <div class="content-second-box">
-                <div class="box-bg"></div>
-                <div class="box-content">
-                  <img src="img/service-ic1.svg" alt="service-ic1" />
-                  <h3 class="">Free shipping</h3>
-                  <p class="">
-                    Enjoy Order in a hand using the fresness of groceries
-                  </p>
-                </div>
+            <div class="footer-first-company">
+              <h4 class="company-title footer-first-col-title">Company</h4>
+              <div class="footer-first-col-desc">
+                <nav class="company-nav-links">
+                  <ul class="company-link-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Locations Map</a></li>
+                  </ul>
+                </nav>
               </div>
-              <div class="content-second-box">
-                <div class="box-bg"></div>
-                <div class="box-content">
-                  <img src="img/service-ic2.svg" alt="service-ic1" />
-                  <h3 class="">15 days returns</h3>
-                  <p class="">
-                    Order in a handy way using the freshness of the groceries.
-                  </p>
-                </div>
+            </div>
+            <div class="footer-first-service">
+              <h4 class="service-title footer-first-col-title">Services</h4>
+              <div class="footer-first-col-desc">
+                <nav class="service-nav-links">
+                  <ul class="service-link-list">
+                    <li><a href="#">Order tracking</a></li>
+                    <li><a href="#">Wish List</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+                </nav>
               </div>
-              <div class="content-second-box">
-                <div class="box-bg"></div>
-                <div class="box-content">
-                  <img src="img/service-ic3.svg" alt="service-ic1" />
-                  <h3 class="">Secure checkout</h3>
-                  <p class="">
-                    If you get rotten items - return immediately to us.
-                  </p>
-                </div>
+            </div>
+            <div class="footer-first-subcribe">
+              <h4 class="subcribe-title footer-first-col-title">Get in Touch</h4>
+              <div class="footer-first-col-desc">
+                <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
               </div>
+            </div>
+          </div>
+          <div class="footer-second">
+            <div class="footer-second-all-right">All Rights Reserved @ BESNIK 2021</div>
+            <div class="footer-second-more">
+              <div class="footer-second-more-term">Terms & Conditions</div>
+              <div class="footer-second-more-privacy">Privacy & Policy</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
