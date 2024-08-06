@@ -395,6 +395,12 @@ h1.content-first-title span {
 .footer-first .footer-first-col-desc li a:hover {
   color: #000;
 }
+.footer-divider {
+  margin: 30px 0;
+  height: 1px;
+  background: #ECECEC;
+  opacity: 0.25;
+}
 .footer-second {
   display: flex;
   align-items: center;
