@@ -1,7 +1,7 @@
 @import url("style.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  outline: 1px solid #ccc;
+  /* outline: 1px solid #ccc; */
 }
 img {
   display: block;
@@ -355,4 +355,66 @@ h1.content-first-title span {
 .section-footer {
   padding-top: 50px;
   color: #212529;
+}
+.footer-first {
+  display: flex;
+  font-size: 1.6rem;
+  color: #676767;
+}
+.footer-first-logo {
+  width: 31%;
+  padding: 10px 12px;
+}
+.footer-first p {
+  max-width: 75%;
+  margin: 25px 0 10px;
+}
+.footer-first .footer-first-subcribe p {
+  max-width: 100%;
+}
+.footer-first-company,
+.footer-first-service,
+.footer-first-subcribe {
+  width: 23%;
+  padding: 20px 12px;
+}
+.footer-first .footer-first-col-title{
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #2E2E2E;
+}
+.footer-first .footer-first-col-desc {
+  margin: 30px 0 10px;
+}
+.footer-first .footer-first-col-desc li a {
+  line-height: 4rem;
+  color: #676767;
+}
+.footer-first .footer-first-col-desc li a:hover {
+  color: #000;
+}
+.footer-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px 30px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.footer-second-all-right {
+  color: #8c8c8c;
+}
+.footer-second-more {
+  display: flex;
+  align-items: center;
+  color: #747474;
+  font-weight: 500;
+}
+.footer-second-more a {
+  margin: 0 10px;
+}
+.footer-second-more a:hover {
+  color: #000;
 }
